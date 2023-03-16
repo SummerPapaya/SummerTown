@@ -1,2 +1,2 @@
 # SummerTown
-Welcome to Summer Town, my parallel world.
+Welcome to Summer Town, my little parallel world.
