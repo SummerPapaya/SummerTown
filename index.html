@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer Town | Podcast Island</title>
+    <meta
+      name="description"
+      content="Explore Summer Town, an isometric pastel island where each landmark unlocks a podcast world."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="eyebrow">Podcast Series World</p>
+      <h1>Summer Town</h1>
+      <p class="lead">
+        A pastel island in Monument Valley spirit. Hover each building to see
+        its story, then click to enter its own page.
+      </p>
+    </header>
+
+    <main class="landing-layout">
+      <section class="map-wrap" aria-labelledby="map-title">
+        <h2 id="map-title" class="sr-only">Interactive Isometric Town Map</h2>
+
+        <svg
+          class="town-map"
+          viewBox="0 0 1200 780"
+          role="img"
+          aria-label="Isometric map of Summer Town island with clickable locations"
+        >
+          <defs>
+            <linearGradient id="islandTop" x1="0%" x2="100%" y1="0%" y2="100%">
+              <stop offset="0%" stop-color="#d8f3dc" />
+              <stop offset="100%" stop-color="#b7e4c7" />
+            </linearGradient>
+            <linearGradient id="water" x1="0%" x2="100%" y1="0%" y2="0%">
+              <stop offset="0%" stop-color="#cfe8ff" />
+              <stop offset="100%" stop-color="#d7f4ff" />
+            </linearGradient>
+          </defs>
+
+          <rect x="0" y="0" width="1200" height="780" fill="url(#water)" />
+          <ellipse
+            cx="590"
+            cy="390"
+            rx="470"
+            ry="280"
+            fill="#b9e5d0"
+            opacity="0.35"
+          />
+
+          <polygon
+            points="180,360 610,130 1010,320 560,650"
+            fill="url(#islandTop)"
+            stroke="#9bcdb5"
+            stroke-width="6"
+          />
+
+          <polygon
+            points="180,360 560,650 560,690 180,400"
+            fill="#8abf9f"
+            opacity="0.75"
+          />
+          <polygon
+            points="560,650 1010,320 1010,360 560,690"
+            fill="#7fb295"
+            opacity="0.75"
+          />
+
+          <a
+            class="map-node"
+            href="pages/town-center.html"
+            data-title="Summer Town Center"
+            data-summary="The flagship square with town-wide stories, opening episodes, and season events."
+          >
+            <g class="node-shape">
+              <polygon points="520,230 620,180 700,235 595,288" fill="#ffd6a5" />
+              <polygon points="595,288 700,235 700,300 595,350" fill="#efb983" />
+              <polygon points="520,230 595,288 595,350 520,292" fill="#d99a6c" />
+              <rect x="565" y="250" width="35" height="45" fill="#f6efe6" />
+              <rect x="615" y="248" width="32" height="34" fill="#f6efe6" />
+              <text x="610" y="205" text-anchor="middle">Summer Town Center</text>
+            </g>
+          </a>
+
+          <a
+            class="map-node"
+            href="pages/goodnight-studio.html"
+            data-title="Goodnight Studio"
+            data-summary="A cozy mini theater for scripted bedtime performances and live special recordings."
+          >
+            <g class="node-shape">
+              <polygon points="345,300 420,260 500,302 420,342" fill="#cdb4db" />
+              <polygon points="420,342 500,302 500,355 420,395" fill="#ab94bf" />
+              <polygon points="345,300 420,342 420,395 345,352" fill="#9983ae" />
+              <circle cx="423" cy="318" r="14" fill="#f8f4ff" />
+              <text x="425" y="245" text-anchor="middle">Goodnight Studio</text>
+            </g>
+          </a>
+
+          <a
+            class="map-node"
+            href="pages/apple-cottage.html"
+            data-title="Apple Cottage"
+            data-summary="An apple-shaped home for warm diary-style episodes, personal notes, and tiny confessions."
+          >
+            <g class="node-shape">
+              <ellipse cx="775" cy="268" rx="62" ry="52" fill="#ffadad" />
+              <ellipse cx="805" cy="268" rx="40" ry="38" fill="#ff8ea2" />
+              <rect x="752" y="208" width="12" height="18" fill="#8e6a4c" />
+              <path d="M761 208 C780 180, 812 190, 821 208" fill="#8dc79b" />
+              <rect x="760" y="262" width="24" height="30" fill="#fdf3eb" />
+              <text x="785" y="190" text-anchor="middle">Apple Cottage</text>
+            </g>
+          </a>
+
+          <a
+            class="map-node"
+            href="pages/tinkle-isle.html"
+            data-title="Tinkle Isle"
+            data-summary="A music cafe where rhythm-driven episodes, jingles, and guest jam sessions are brewed."
+          >
+            <g class="node-shape">
+              <polygon points="675,360 760,315 835,355 748,398" fill="#9bf6ff" />
+              <polygon points="748,398 835,355 835,410 748,455" fill="#7fd3db" />
+              <polygon points="675,360 748,398 748,455 675,418" fill="#6bbcc4" />
+              <rect x="740" y="342" width="15" height="48" fill="#e8ffff" />
+              <circle cx="747" cy="336" r="10" fill="#f8fdff" />
+              <text x="755" y="305" text-anchor="middle">Tinkle Isle</text>
+            </g>
+          </a>
+
+          <a
+            class="map-node"
+            href="pages/library.html"
+            data-title="Town Library"
+            data-summary="A quiet stack of research stories, annotated reading lists, and lore references."
+          >
+            <g class="node-shape">
+              <polygon points="470,410 540,374 615,410 545,446" fill="#fdffb6" />
+              <polygon points="545,446 615,410 615,462 545,498" fill="#d9d98e" />
+              <polygon points="470,410 545,446 545,498 470,462" fill="#bebf7c" />
+              <rect x="525" y="418" width="16" height="22" fill="#f6f9d5" />
+              <text x="543" y="360" text-anchor="middle">Library</text>
+            </g>
+          </a>
+
+          <a
+            class="map-node"
+            href="pages/photo-gallery.html"
+            data-title="Photo Gallery"
+            data-summary="Visual companion space for cover art, behind-the-scenes frames, and episode stills."
+          >
+            <g class="node-shape">
+              <polygon points="290,430 365,390 445,432 370,472" fill="#bde0fe" />
+              <polygon points="370,472 445,432 445,488 370,526" fill="#9cbdd9" />
+              <polygon points="290,430 370,472 370,526 290,484" fill="#86a6c0" />
+              <rect x="355" y="432" width="22" height="17" fill="#f4fbff" />
+              <text x="372" y="375" text-anchor="middle">Photo Gallery</text>
+            </g>
+          </a>
+
+          <a
+            class="map-node"
+            href="pages/archive-room.html"
+            data-title="Archive Room"
+            data-summary="Locked drawers of diaries, articles, and timeline notes from across the whole series."
+          >
+            <g class="node-shape">
+              <polygon points="610,500 695,455 770,495 685,540" fill="#ffc6ff" />
+              <polygon points="685,540 770,495 770,560 685,605" fill="#d9a8d9" />
+              <polygon points="610,500 685,540 685,605 610,565" fill="#bf90bf" />
+              <rect x="675" y="510" width="18" height="22" fill="#fdf0fd" />
+              <text x="688" y="442" text-anchor="middle">Archive Room</text>
+            </g>
+          </a>
+        </svg>
+      </section>
+
+      <aside class="info-card" aria-live="polite">
+        <h2 id="location-name">Summer Town Center</h2>
+        <p id="location-summary">
+          The flagship square with town-wide stories, opening episodes, and
+          season events.
+        </p>
+        <p class="hint">
+          Hover or focus a building for details. Click to open its destination
+          page.
+        </p>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>Summer Town Podcast Series &mdash; Island Map Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
